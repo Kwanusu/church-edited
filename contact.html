@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <script src="https://kit.fontawesome.com/7adf3be8fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Church.css">
+</head>
+<body>
+    <section class="header">
+        <nav id="navbar">
+            <a href="My Church.html"><span class="logo"><img src="Inkedlogo-removebg-preview_LI-removebg-preview.png"></span></a>
+           <div class="nav-links" id="navLinks">
+              <i class="fa fa-times" onclick="hideMenu()"></i> 
+              <ul>
+                <li><a href="My Church.html">HOME</a></i></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="events.html">CHURCH EVENTS</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+              </ul>
+           </div>
+           <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+   
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1  class="sub-title">Contact Us</h1>
+                    <p><a href="#"><i class="fa-solid fa-envelope"></i>huruma.fc.quakers@gmail.com</a></p>
+                    <p><a href="#"><i class="fa-solid fa-phone"></i>+254727372462</a></p>
+                </div>
+            </div>
+            <div class="contact-write">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="number" name="phone-number" placeholder="Your phone-number" required>
+                    <textarea name="Message" rows="4" placeholder="Your Message"></textarea>
+                    <button onclick="SubmitEvent()" type="submit" class="btn">Submit</button>
+                </form>
+                <span id="msg"></span>  
+            </div>
+            <div class="member">
+                <h4>To Support Our Programs</h4>
+                <button  class="btn1"><a href="payment.html">click to support</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="form">
+        <form id="payment-form">
+            <div class="member">
+                <h3>Membership Registration Form</h3>
+                <div class="reg">
+                  <div class="input-group">
+                    <label for="userName">Name:</label>
+                    <input type="text" id="userName" name="userName" placeholder="Enter your name" />
+                  </div>
+                  <div class="input-group">
+                    <label for="userEmail">Email:</label>
+                    <input type="email" id="userEmail" name="userEmail" placeholder="@gmail.com"/>
+                  </div>
+                  <div class="input-group">
+                        <label for="userGender">Gender:</label>
+                        <select name="userGender" id="userGender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                  </div>
+                  <div class="input-group">
+                    <label for="userAge">Age:</label>
+                    <input type="number" id="userAge" name="userAge" placeholder="Age"/>
+                  </div>
+                  <div class="input-group">
+                    <label for="userZone">Zone:</label>
+                    <select id="userZone" name="userStatus">
+                        <option value="fullMember">Zone A</option>
+                        <option value="associateMember">Zone B</option>
+                        <option value="guest">Zone C</option>
+                        <option value="guest">Zone D</option>
+                        <option value="guest">Zone E</option>
+                    </select>
+                  </div>
+                  <div class="input-group">
+                     <label for="userStatus" aria-placeholder="Select Status">Status:</label>
+                     <select id="userStatus" name="userStatus">
+                        <option value="fullMember">Full Member</option>
+                        <option value="associateMember">Associate Member</option>
+                        <option value="guest">Guest</option>
+                     </select>
+                  </div>
+                </div>
+                <button id="submit-to-google-sheet" onclick="submit()" type="submit" class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+    <div class="icons">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/gladys.midega"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.twitter.com/"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://wa.me/+254"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+    </div>
+<footer>
+    <div class="copyright">
+            Copyright ©
+            <h4>Friends Church Huruma-Eldoret</h4>
+            2024.
+        <p>
+            Made with<i class="fa fa-heart-o"></i>  by Kwanusu.
+        </p>
+    </div> 
+</footer>
+<script src="Church.js">
+  
+</script>
+</body>
+</html>
